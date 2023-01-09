@@ -1,0 +1,27 @@
+.navLink{
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: none;
+}
+
+.navItems{
+  border-radius: 0;
+}
+
+.logo{
+  position: absolute;
+  left: 75px;
+  top: 20px;
+  z-index: 10000000;
+}
+
+.navActive{
+  border-bottom: 2px solid red;
+}
+.subNav{
+  font-size: 12px;
+  font-weight: 700;
+  color: black;
+
+}
