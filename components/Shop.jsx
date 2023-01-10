@@ -25,7 +25,7 @@ function handleClick(event) {
   console.info("You clicked a breadcrumb.");
 }
 
-function Recipes() {
+function Shop() {
   const breadcrumbs = [
     <Link
       underline="hover"
@@ -34,7 +34,7 @@ function Recipes() {
       href="/"
       onClick={handleClick}
     >
-      RECIPES
+      SHOP
     </Link>,
     <Link
       underline="hover"
@@ -43,10 +43,10 @@ function Recipes() {
       href="/material-ui/getting-started/installation/"
       onClick={handleClick}
     >
-      BREAD
+      FRUITS
     </Link>,
     <Typography key="3" color="text.primary">
-      QUICK BREAD
+      Strawberry
     </Typography>,
   ];
   return (
@@ -62,14 +62,14 @@ function Recipes() {
                 {breadcrumbs}
               </Breadcrumbs>
             </Stack>
-            <h3>Whole-grain Banana Bread</h3>
+            <h3>Strawberry</h3>
             <Typography sx={{ fontSize: 16 }} gutterBottom>
-              This one-bowl banana bread — our 2018 Recipe of the Year —uses the
-              simplest ingredients, but is incredibly moist and flavorful. While
-              the recipe calls for a 50/50 mix of flours (all-purpose and whole
-              wheat), we often make the bread 100% whole wheat, and honestly? No
-              one can tell, it's that good! And not only is this bread delicious
-              — it's versatile.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
+              sequi, nemo dolorum praesentium delectus libero totam officiis
+              sapiente debitis est consectetur? Provident, tempore itaque. Iusto
+              veritatis quod ut maiores voluptatem rem dolore consequatur nobis
+              fugiat repudiandae hic mollitia, id, quidem consectetur aspernatur
+              voluptas vero cupiditate optio, ex dicta est similique.
             </Typography>
             <div className="time-part">
               <List>
@@ -111,7 +111,7 @@ function Recipes() {
               </List>
               <Stack direction="row" spacing={2}>
                 <Button variant="outlined" startIcon={<AddIcon />}>
-                  save recipe
+                  Add
                 </Button>
                 <Button variant="outlined" startIcon={<PrintIcon />}>
                   print
@@ -121,7 +121,7 @@ function Recipes() {
           </Grid>
           <Grid md={6}>
             <img
-              src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d"
+              src="/product-img-1.jpg"
               className="image-part"
             />
           </Grid>
@@ -131,4 +131,4 @@ function Recipes() {
   );
 }
 
-export default Recipes;
+export default Shop;

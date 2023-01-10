@@ -1,8 +1,9 @@
 import React from 'react'
+import Learn from '../components/Learn'
 
 function learn() {
   return (
-    <div>learn</div>
+    <Learn />
   )
 }
 

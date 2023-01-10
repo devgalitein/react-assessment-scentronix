@@ -25,7 +25,7 @@ function handleClick(event) {
   console.info("You clicked a breadcrumb.");
 }
 
-function Recipes() {
+function Learn() {
   const breadcrumbs = [
     <Link
       underline="hover"
@@ -34,7 +34,7 @@ function Recipes() {
       href="/"
       onClick={handleClick}
     >
-      RECIPES
+      LEARN
     </Link>,
     <Link
       underline="hover"
@@ -53,6 +53,12 @@ function Recipes() {
     <Container>
       <Box>
         <Grid container spacing={5} sx={{ marginTop: "30px" }}>
+        <Grid md={6}>
+            <img
+              src="tech.webp"
+              className="image-part"
+            />
+          </Grid>
           <Grid md={6}>
             <Stack spacing={2}>
               <Breadcrumbs
@@ -119,16 +125,11 @@ function Recipes() {
               </Stack>
             </div>
           </Grid>
-          <Grid md={6}>
-            <img
-              src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d"
-              className="image-part"
-            />
-          </Grid>
+          
         </Grid>
       </Box>
     </Container>
   );
 }
 
-export default Recipes;
+export default Learn;
